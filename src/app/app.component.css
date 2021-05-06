@@ -1,16 +1,11 @@
 div {
   background-color: lightblue;
 }
+
 h1 {
   color: royalblue;
   font-family: Arial, sans-serif;
   font-size: xxx-large;
-  text-align: center;
-}
-h2{
-  color: darkseagreen;
-  font-family: Arial, sans-serif;
-  font-size: large;
   text-align: center;
 }
 

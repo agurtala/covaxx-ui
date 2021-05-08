@@ -5,7 +5,7 @@ import {CertificatePageComponent} from './pages/certificate-page/certificate-pag
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'homepage',
     component: HomePageComponent
   },
   {

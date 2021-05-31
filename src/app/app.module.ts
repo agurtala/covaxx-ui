@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CertificatePageComponent } from './pages/certificate-page/certificate-page.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { BookingComponent } from './pages/booking/booking.component';
+import { InboxComponent } from './pages/inbox/inbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    CertificatePageComponent
+    CertificatePageComponent,
+    BookingComponent,
+    InboxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

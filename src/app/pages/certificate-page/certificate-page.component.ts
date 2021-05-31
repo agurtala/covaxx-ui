@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {ApiService, Certificate, Patient, Vaccine} from '../../services/api.service';
+
 
 @Component({
   selector: 'app-certificate-page',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificatePageComponent implements OnInit {
 
-  constructor() { }
+  // @ts-ignore
+  certificate: Certificate;
+  // @ts-ignore
+  certID: string;
 
-  ngOnInit(): void {
-  }
+  // @ts-ignore
+  patient: Patient;
+  // @ts-ignore
+  patientID: string;
+
+  // @ts-ignore
+  vaccine: Vaccine;
+  // @ts-ignore
+  vacID: string;
+
+  constructor(
+   // public route: ActivatedRoute
+    public api: ApiService
+  ) { }
+
+// @ts-ignore
+currentCertificates: Certificate[];
+
+async ngOnInit(): Promise<void> {
+
+    // this.certID = this.api.getCertificate(this.route.snapshot.params.certID) ;
+  this.currentCertificates = await this.api.getCertificates();
+}
 
 }

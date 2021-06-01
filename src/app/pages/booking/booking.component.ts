@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ApiService, Patient, Session} from '../../services/api.service';
 
+
 @Component({
-  selector: 'app-booking-page',
-  templateUrl: './booking-page.component.html',
-  styleUrls: ['./booking-page.component.css']
+  selector: 'app-booking',
+  templateUrl: './booking.component.html',
+  styleUrls: ['./booking.component.css']
 })
 export class BookingPageComponent implements OnInit {
 
@@ -14,12 +15,12 @@ export class BookingPageComponent implements OnInit {
   // @ts-ignore
   patientMedCondition: string;
 
-  patientOccupation: string;
+  patientOccupation = '';
 
   // @ts-ignore
   patient: Patient;
   // @ts-ignore
-  patientId: string;
+  patientID: string;
 
   // @ts-ignore
   session: Session;

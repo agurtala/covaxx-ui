@@ -28,3 +28,4 @@ import { InboxComponent } from './pages/inbox/inbox.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

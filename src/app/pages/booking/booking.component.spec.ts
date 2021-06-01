@@ -1,3 +1,5 @@
+/************************** Shino's Contribution *********************/
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 // @ts-ignore
@@ -24,3 +26,5 @@ describe('BookingPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+/************************** Shino's Contribution *********************/

@@ -1,5 +1,7 @@
+// ************************** Alfiyyah's Contribution *********************//
+
+
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {ApiService, Certificate, Patient, Vaccine} from '../../services/api.service';
 
 
@@ -26,7 +28,6 @@ export class CertificatePageComponent implements OnInit {
   vacID: string;
 
   constructor(
-   // public route: ActivatedRoute
     public api: ApiService
   ) { }
 
@@ -40,3 +41,5 @@ async ngOnInit(): Promise<void> {
 }
 
 }
+
+// ************************** Alfiyyah's Contribution *********************//

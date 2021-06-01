@@ -1,6 +1,8 @@
+// /************************** Shino's Contribution *********************/
+
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {ApiService, Patient, Session} from '../../services/api.service';
+
 
 
 @Component({
@@ -28,9 +30,9 @@ export class BookingPageComponent implements OnInit {
   sessionId: string;
 
   constructor(
-    // public route: ActivatedRoute
     public api: ApiService
   ) { }
+
 // @ts-ignore
   currentPractice: Practice[];
   // @ts-ignore
@@ -50,3 +52,5 @@ export class BookingPageComponent implements OnInit {
     await this.api.createPatient(this.patient);
   }
 }
+
+// /************************** Shino's Contribution *********************/

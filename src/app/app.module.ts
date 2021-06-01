@@ -7,7 +7,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CertificatePageComponent } from './pages/certificate-page/certificate-page.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import { BookingComponent } from './pages/booking/booking.component';
+import {BookingPageComponent} from './pages/booking/booking.component';
 import { InboxComponent } from './pages/inbox/inbox.component';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { InboxComponent } from './pages/inbox/inbox.component';
     AppComponent,
     HomePageComponent,
     CertificatePageComponent,
-    BookingComponent,
+    BookingPageComponent,
     InboxComponent
   ],
   imports: [
